@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Banking - Intelliquest | AI-Powered Financial Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+        <span class="nav-logo-text">Intelli<span>Quest</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">AI Services</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="finance.html" class="active">Finance</a>
+        <a href="research.html">Research</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Contact Us</a>
+      </div>
+      <button class="nav-mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="about.html" onclick="closeMobileMenu()">About</a>
+    <a href="services.html" onclick="closeMobileMenu()">AI Services</a>
+    <a href="healthcare.html" onclick="closeMobileMenu()">Healthcare</a>
+    <a href="finance.html" class="active" onclick="closeMobileMenu()">Finance</a>
+    <a href="research.html" onclick="closeMobileMenu()">Research</a>
+    <a href="infrastructure.html" onclick="closeMobileMenu()">Infrastructure</a>
+    <a href="education.html" onclick="closeMobileMenu()">Education</a>
+    <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 64, 129, 0.1) 100%);">
+        <div class="container">
+            <span class="label-tag amber">Finance & Banking Solutions</span>
+            <h1 class="text-gradient-amber">Intelligent Financial Systems Powered by AI</h1>
+            <p class="subtitle">Transform financial operations with advanced AI-driven solutions for trading, fraud detection, risk management, and automation</p>
+        </div>
+    </section>
+
+    <!-- Trading Reconciliation Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trading Reconciliation</h2>
+                <p>AI-Powered Reconciliation Systems</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="feature-visual reveal">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Trading and finance analysis" loading="lazy">
+                </div>
+                
+                <div class="feature-content reveal">
+                    <h3>Anomaly Detection & Automated Matching</h3>
+                    <p>Our intelligent reconciliation systems detect anomalies in real-time and automatically match transactions across multiple systems. Reduce manual reconciliation time by up to 85% while improving accuracy and identifying discrepancies instantly.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="tag amber">Real-Time Processing</span>
+                            <p>Process millions of transactions instantaneously</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Anomaly Detection</span>
+                            <p>Identify irregular patterns and outliers</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Automated Matching</span>
+                            <p>Smart algorithms for precise transaction matching</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fraud Detection Section -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.02);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fraud Detection & Prevention</h2>
+                <p>Advanced Real-Time Protection Systems</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="feature-content reveal">
+                    <h3>Real-Time Fraud Detection with Graph Neural Networks</h3>
+                    <p>Our cutting-edge fraud detection engine combines behavioral analytics with graph neural networks to identify fraudulent activities in milliseconds. Prevent losses before they occur with AI-driven behavioral monitoring and transaction analysis.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="tag amber">Behavioral Analytics</span>
+                            <p>Learn and detect deviations from normal patterns</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Graph Neural Networks</span>
+                            <p>Analyze complex transaction relationships and networks</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Transaction Monitoring</span>
+                            <p>Continuous monitoring across all channels</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-visual reveal">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Risk and compliance monitoring" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Modelling Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Risk Modelling & Management</h2>
+                <p>Comprehensive Risk Assessment Solutions</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&q=80" alt="Risk management and compliance" loading="lazy">
+            </div>
+
+            <div class="grid-3">
+                <div class="card reveal">
+                    <div class="card-icon amber">
+                        <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 2C12.95 2 4 10.95 4 22c0 11.05 8.95 20 20 20s20-8.95 20-20-8.95-20-20-20zm0 36c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h4>Credit Risk Assessment</h4>
+                    <p>Advanced ML models for creditworthiness evaluation and loan default prediction with real-time scoring</p>
+                </div>
+                
+                <div class="card reveal">
+                    <div class="card-icon amber">
+                        <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                            <path d="M42 6H6c-2.2 0-4 1.8-4 4v28c0 2.2 1.8 4 4 4h36c2.2 0 4-1.8 4-4V10c0-2.2-1.8-4-4-4zm0 32H6V10h36v28z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h4>Market Risk Analysis</h4>
+                    <p>Predictive modeling for portfolio volatility, VaR calculations, and market stress testing</p>
+                </div>
+                
+                <div class="card reveal">
+                    <div class="card-icon amber">
+                        <svg width="40" height="40" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm0-28c-6.63 0-12 5.37-12 12s5.37 12 12 12 12-5.37 12-12-5.37-12-12-12z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h4>Operational Risk Management</h4>
+                    <p>Comprehensive ML models for process risk, compliance monitoring, and operational anomaly detection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Data Analysis Section -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.02);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Financial Data Analysis</h2>
+                <p>Deep Insights Through Advanced Analytics</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="feature-visual reveal">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Financial data analytics and insights" loading="lazy">
+                </div>
+                
+                <div class="feature-content reveal">
+                    <h3>Pattern Recognition & Predictive Analytics</h3>
+                    <p>Uncover hidden patterns in financial data using advanced machine learning. Our predictive analytics engine forecasts market trends, customer behavior, and revenue patterns with exceptional accuracy.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="tag amber">Pattern Recognition</span>
+                            <p>Identify correlations and market trends automatically</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Predictive Analytics</span>
+                            <p>Forecast financial outcomes with high precision</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Reporting Automation</span>
+                            <p>Generate comprehensive reports in real-time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banking Automation Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Banking Process Automation</h2>
+                <p>Streamline Operations with Intelligent Automation</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="feature-content reveal">
+                    <h3>End-to-End Process Automation</h3>
+                    <p>Automate critical banking processes including document processing, KYC verification, and customer service interactions. Our RPA and AI solutions reduce operational costs by up to 70% while improving customer satisfaction.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="tag amber">Document Processing</span>
+                            <p>Intelligent OCR and form processing with AI</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Process Automation</span>
+                            <p>RPA solutions for repetitive banking tasks</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="tag amber">Customer Service AI</span>
+                            <p>Intelligent chatbots and virtual banking assistants</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-visual reveal">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="Banking process automation and digital banking" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline Section -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.02);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Financial AI Workflow Pipeline</h2>
+                <p>Integrated Intelligence Across Your Organization</p>
+            </div>
+            
+            <div class="pipeline">
+                <div class="pipeline-stage reveal">
+                    <div class="pipeline-icon" style="background: linear-gradient(135deg, #ffc107 0%, #ff4081 100%);">
+                        <span>1</span>
+                    </div>
+                    <h4>Data Collection</h4>
+                    <p>Aggregate data from all financial systems</p>
+                </div>
+                
+                <div class="pipeline-connector"></div>
+                
+                <div class="pipeline-stage reveal">
+                    <div class="pipeline-icon" style="background: linear-gradient(135deg, #ff4081 0%, #ffc107 100%);">
+                        <span>2</span>
+                    </div>
+                    <h4>Data Processing</h4>
+                    <p>Clean, normalize, and prepare data</p>
+                </div>
+                
+                <div class="pipeline-connector"></div>
+                
+                <div class="pipeline-stage reveal">
+                    <div class="pipeline-icon" style="background: linear-gradient(135deg, #ffc107 0%, #ff4081 100%);">
+                        <span>3</span>
+                    </div>
+                    <h4>AI Analysis</h4>
+                    <p>Run ML models and algorithms</p>
+                </div>
+                
+                <div class="pipeline-connector"></div>
+                
+                <div class="pipeline-stage reveal">
+                    <div class="pipeline-icon" style="background: linear-gradient(135deg, #ff4081 0%, #ffc107 100%);">
+                        <span>4</span>
+                    </div>
+                    <h4>Insights & Actions</h4>
+                    <p>Generate recommendations and alerts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Financial Operations?</h2>
+            <p>Let Intelliquest AI solutions revolutionize your banking and finance operations. Contact us for a personalized consultation.</p>
+            <a href="contact.html" class="btn btn-white">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+            <span class="nav-logo-text">Intelli<span>Quest</span></span>
+          </a>
+          <p>Applying Artificial Intelligence to accelerate innovation in Health Technology, Banking, and Financial Services.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">AI Engineering</a>
+          <a href="healthcare.html">Healthcare AI</a>
+          <a href="finance.html">Financial AI</a>
+          <a href="infrastructure.html">AI Infrastructure</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="research.html">Research</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+          <a href="#">Cambridge, UK</a>
+          <a href="#">Mon - Fri, 9:00 - 18:00 GMT</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 IntelliQuest. All rights reserved.</span>
+        <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

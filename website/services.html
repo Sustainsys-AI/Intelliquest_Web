@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Services - IntelliQuest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+        <span class="nav-logo-text">Intelli<span>Quest</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">AI Services</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="finance.html">Finance</a>
+        <a href="research.html">Research</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Contact Us</a>
+      </div>
+      <button class="nav-mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="about.html" onclick="closeMobileMenu()">About</a>
+    <a href="services.html" class="active" onclick="closeMobileMenu()">AI Services</a>
+    <a href="healthcare.html" onclick="closeMobileMenu()">Healthcare</a>
+    <a href="finance.html" onclick="closeMobileMenu()">Finance</a>
+    <a href="research.html" onclick="closeMobileMenu()">Research</a>
+    <a href="infrastructure.html" onclick="closeMobileMenu()">Infrastructure</a>
+    <a href="education.html" onclick="closeMobileMenu()">Education</a>
+    <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="label-tag">AI Services</span>
+            <h1>End-to-End AI Engineering & Implementation</h1>
+            <p>From concept to production. We design, build, and deploy enterprise-grade AI solutions tailored to your business needs.</p>
+        </div>
+    </section>
+
+    <!-- AI Engineering Services -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Engineering Services</h2>
+                <p>Core competencies in machine learning and AI model development</p>
+            </div>
+            <div class="grid-4">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4C13.5066 4 5 12.5066 5 23C5 33.4934 13.5066 42 24 42C34.4934 42 43 33.4934 43 23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 12V23L32 31" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Model Training</h3>
+                    <p>End-to-end training pipelines optimized for your specific use case.</p>
+                    <div class="tag-row">
+                        <span class="tag">ML</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="6" y="6" width="36" height="36" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M18 16H30M18 24H30M18 32H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="16" r="1.5" fill="currentColor"/>
+                            <circle cx="12" cy="24" r="1.5" fill="currentColor"/>
+                            <circle cx="12" cy="32" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Fine-Tuning Foundation Models</h3>
+                    <p>Adapt foundation models to your domain with efficient techniques including LoRA and QLoRA.</p>
+                    <div class="tag-row">
+                        <span class="tag">LLMs</span>
+                        <span class="tag">Transfer Learning</span>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M6 12H42M6 24H42M6 36H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                            <circle cx="12" cy="24" r="2" fill="currentColor"/>
+                            <circle cx="12" cy="36" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Custom LLM Development</h3>
+                    <p>Build proprietary language models for competitive advantages in your industry.</p>
+                    <div class="tag-row">
+                        <span class="tag">LLM</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 16V32M16 24H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 16L32 32M32 16L16 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3>AI Deployment Pipelines</h3>
+                    <p>Production-ready infrastructure with monitoring, versioning, and continuous improvement.</p>
+                    <div class="tag-row">
+                        <span class="tag">MLOps</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data & AI Systems -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Data & AI Systems</h2>
+                <p>Complete data infrastructure for intelligent applications</p>
+            </div>
+            <div class="grid-3">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M6 16L24 6L42 16V38C42 39.1046 41.1046 40 40 40H8C6.89543 40 6 39.1046 6 38V16Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M24 6V24" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <rect x="15" y="26" width="18" height="12" rx="1" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Data Creation & Curation</h3>
+                    <p>Synthetic and real-world data generation, annotation, and curation for training.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 12H40C41.1046 12 42 12.8954 42 14V34C42 35.1046 41.1046 36 40 36H8C6.89543 36 6 35.1046 6 34V14C6 12.8954 6.89543 12 8 12Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 18H42M15 24H33M15 30H25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Data Pipelines</h3>
+                    <p>ETL/ELT frameworks for data integration and orchestration from multiple sources.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 6C14.0589 6 6 14.0589 6 24C6 33.9411 14.0589 42 24 42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="12" r="1.5" fill="currentColor"/>
+                            <circle cx="36" cy="24" r="1.5" fill="currentColor"/>
+                            <circle cx="24" cy="36" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>AI Ingestion Pipelines</h3>
+                    <p>Real-time and batch ingestion systems with streaming and edge computing.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M12 18C12 14.6863 14.6863 12 18 12H30C33.3137 12 36 14.6863 36 18V30C36 33.3137 33.3137 36 30 36H18C14.6863 36 12 33.3137 12 30V18Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 20L28 28M28 20L20 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>RAG Pipelines</h3>
+                    <p>Retrieval-Augmented Generation combining knowledge bases with LLMs for accurate responses.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 28C15 24.134 19.0294 21 24 21C28.9706 21 33 24.134 33 28" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 40C8 34.477 15.3726 30 24 30C32.6274 30 40 34.477 40 40" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Knowledge Systems</h3>
+                    <p>Knowledge graphs and semantic search for intelligent querying over organizational data.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L28.5 16.5H41.5L31.5 24L36 36.5L24 28L12 36.5L16.5 24L6.5 16.5H19.5L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Vector Databases</h3>
+                    <p>High-performance vector storage for embeddings and semantic search.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Delivery Process Flow -->
+    <section class="section section-compact">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Delivery Process</h2>
+                <div class="accent-line"></div>
+                <p>From discovery to continuous optimization</p>
+            </div>
+            <div class="process-flow reveal">
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">1</div>
+                    <h4>Discover</h4>
+                    <p>Understand objectives and data assets</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">2</div>
+                    <h4>Design</h4>
+                    <p>Architecture and solution planning</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">3</div>
+                    <h4>Build</h4>
+                    <p>Model development and integration</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">4</div>
+                    <h4>Deploy</h4>
+                    <p>Production deployment and training</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">5</div>
+                    <h4>Optimise</h4>
+                    <p>Monitor and continuously improve</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Implementation -->
+    <section class="section section-compact section-cyan-tint">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enterprise AI Implementation</h2>
+                <div class="accent-line"></div>
+                <p>Seamless integration with minimal disruption</p>
+            </div>
+            <div class="grid-2" style="gap: 2rem;">
+                <div>
+                    <h3>Process Automation</h3>
+                    <p>Intelligent automation drives operational efficiency and cost savings.</p>
+                </div>
+                <div>
+                    <h3>System Integration</h3>
+                    <p>Custom APIs and minimal-disruption deployment ensure smooth adoption.</p>
+                </div>
+                <div>
+                    <h3>Team Enablement</h3>
+                    <p>Change management and training programs accelerate value realization.</p>
+                </div>
+                <div>
+                    <h3>Governance</h3>
+                    <p>Compliance frameworks and continuous optimization for long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Infrastructure -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Infrastructure & Computing</h2>
+                <p>Scalable, secure, and cost-effective infrastructure for AI workloads</p>
+            </div>
+            <div class="grid-3">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="14" y="20" width="6" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+                            <rect x="28" y="20" width="6" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="38" r="1.5" fill="currentColor"/>
+                            <circle cx="24" cy="38" r="1.5" fill="currentColor"/>
+                            <circle cx="36" cy="38" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>On-Demand Infrastructure</h3>
+                    <p>Flexible, pay-as-you-go compute resources that scale with your AI needs.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="8" width="28" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="14" y="12" width="20" height="6" rx="1" fill="currentColor" opacity="0.3"/>
+                            <rect x="14" y="20" width="20" height="6" rx="1" fill="currentColor" opacity="0.5"/>
+                            <rect x="14" y="28" width="20" height="6" rx="1" fill="currentColor" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h3>GPU & Accelerator Access</h3>
+                    <p>High-performance GPUs and specialized AI accelerators for training and inference at scale.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M8 16C8 13.7909 9.79086 12 12 12H36C38.2091 12 40 13.7909 40 16V32C40 34.2091 38.2091 36 36 36H12C9.79086 36 8 34.2091 8 32V16Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 20H36M12 28H36M16 24H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Scalable Training Infrastructure</h3>
+                    <p>Distributed training systems with optimized multi-GPU orchestration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Model -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Engagement Model</h2>
+                <div class="accent-line"></div>
+                <p>Structured, collaborative approach to AI delivery</p>
+            </div>
+            <div class="grid-2" style="gap: 2rem;">
+                <div class="card reveal">
+                    <div style="font-size: 28px; font-weight: 700; color: var(--primary); margin-bottom: 12px;">1</div>
+                    <h3>Discovery</h3>
+                    <p>Understand your objectives, landscape, and success metrics.</p>
+                </div>
+                <div class="card reveal">
+                    <div style="font-size: 28px; font-weight: 700; color: var(--primary); margin-bottom: 12px;">2</div>
+                    <h3>Design</h3>
+                    <p>Technical assessment and comprehensive solution architecture.</p>
+                </div>
+                <div class="card reveal">
+                    <div style="font-size: 28px; font-weight: 700; color: var(--primary); margin-bottom: 12px;">3</div>
+                    <h3>Build</h3>
+                    <p>Agile development with iterative testing and refinement.</p>
+                </div>
+                <div class="card reveal">
+                    <div style="font-size: 28px; font-weight: 700; color: var(--primary); margin-bottom: 12px;">4</div>
+                    <h3>Deploy</h3>
+                    <p>Production deployment with team training and ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Business with AI?</h2>
+            <p>Let's discuss how our AI engineering expertise can solve your most pressing challenges and unlock new opportunities.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
+                <a href="contact.html" class="btn btn-white">Start Your AI Journey</a>
+                <a href="about.html" class="btn btn-outline-white-white">Learn About Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+            <span class="nav-logo-text">Intelli<span>Quest</span></span>
+          </a>
+          <p>Applying Artificial Intelligence to accelerate innovation in Health Technology, Banking, and Financial Services.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">AI Engineering</a>
+          <a href="healthcare.html">Healthcare AI</a>
+          <a href="finance.html">Financial AI</a>
+          <a href="infrastructure.html">AI Infrastructure</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="research.html">Research</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+          <a href="#">Cambridge, UK</a>
+          <a href="#">Mon - Fri, 9:00 - 18:00 GMT</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 IntelliQuest. All rights reserved.</span>
+        <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

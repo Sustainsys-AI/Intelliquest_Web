@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntelliQuest — AI for Healthcare, Banking & Finance</title>
+  <meta name="description" content="IntelliQuest accelerates innovation in Health Technology, Banking, and Financial Services through cutting-edge Artificial Intelligence research, implementation, and infrastructure.">
+  <meta property="og:title" content="IntelliQuest — AI for Healthcare, Banking & Finance">
+  <meta property="og:description" content="Applying Artificial Intelligence to accelerate innovation in Health Technology, Banking, and Financial Services.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://intelliquest.uk/">
+  <link rel="icon" type="image/png" href="Logo_intelliquest..png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+        <span class="nav-logo-text">Intelli<span>Quest</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">AI Services</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="finance.html">Finance</a>
+        <a href="research.html">Research</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Contact Us</a>
+      </div>
+      <button class="nav-mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html" class="active" onclick="closeMobileMenu()">Home</a>
+    <a href="about.html" onclick="closeMobileMenu()">About</a>
+    <a href="services.html" onclick="closeMobileMenu()">AI Services</a>
+    <a href="healthcare.html" onclick="closeMobileMenu()">Healthcare</a>
+    <a href="finance.html" onclick="closeMobileMenu()">Finance</a>
+    <a href="research.html" onclick="closeMobileMenu()">Research</a>
+    <a href="infrastructure.html" onclick="closeMobileMenu()">Infrastructure</a>
+    <a href="education.html" onclick="closeMobileMenu()">Education</a>
+    <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- ===== HERO (Dark) ===== -->
+  <section class="hero">
+    <div class="grid-bg"></div>
+    <canvas id="particles-canvas"></canvas>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="label-tag">AI Research &amp; Implementation</span>
+          <h1>Advancing <span class="text-gradient">Healthcare, Banking</span> &amp; Finance with AI</h1>
+          <p>IntelliQuest applies Artificial Intelligence to accelerate innovation across Health Technology, Banking, and Financial Services — from research to production-grade deployment.</p>
+          <div class="hero-buttons">
+            <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation</a>
+            <a href="services.html" class="btn btn-outline btn-lg">Explore Capabilities</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h3>5+</h3>
+              <p>Industry Verticals</p>
+            </div>
+            <div class="hero-stat">
+              <h3>E2E</h3>
+              <p>Model to Production</p>
+            </div>
+            <div class="hero-stat">
+              <h3>GPU</h3>
+              <p>On-Demand Compute</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image" style="width:100%;max-width:560px;aspect-ratio:4/3;">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&q=80" alt="AI technology and data science visualisation" loading="eager">
+          </div>
+          <div class="hero-float-card">
+            <span>Model Training</span>
+            <span class="card-value">LLMs</span>
+          </div>
+          <div class="hero-float-card">
+            <span>Health Tech</span>
+            <span class="card-value">AI-Driven</span>
+          </div>
+          <div class="hero-float-card">
+            <span>Infrastructure</span>
+            <span class="card-value">Scalable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCROLLING MARQUEE ===== -->
+  <div class="marquee-wrapper">
+    <div class="marquee">
+      <span>&#x2B22; AI Engineering</span><span>&#x2B22; Model Training</span><span>&#x2B22; Health Technology</span><span>&#x2B22; Banking AI</span><span>&#x2B22; Financial AI</span><span>&#x2B22; Risk Analytics</span><span>&#x2B22; RAG Pipelines</span><span>&#x2B22; GPU Compute</span><span>&#x2B22; LLM Fine-Tuning</span><span>&#x2B22; Medical Imaging</span><span>&#x2B22; Fraud Detection</span><span>&#x2B22; Regulatory Compliance</span>
+      <span>&#x2B22; AI Engineering</span><span>&#x2B22; Model Training</span><span>&#x2B22; Health Technology</span><span>&#x2B22; Banking AI</span><span>&#x2B22; Financial AI</span><span>&#x2B22; Risk Analytics</span><span>&#x2B22; RAG Pipelines</span><span>&#x2B22; GPU Compute</span><span>&#x2B22; LLM Fine-Tuning</span><span>&#x2B22; Medical Imaging</span><span>&#x2B22; Fraud Detection</span><span>&#x2B22; Regulatory Compliance</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT (Light section with mesh tint) ===== -->
+  <section class="section section-cyan-tint">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label-tag">Who We Are</span>
+        <h2 class="mt-16">Intelligence at the <span class="text-gradient">Intersection</span></h2>
+        <p>IntelliQuest operates at the frontier of Artificial Intelligence — building, training, and deploying advanced AI systems for organisations transforming healthcare, banking, and financial services.</p>
+      </div>
+      <div class="grid-3 reveal">
+        <div class="card card-top-cyan">
+          <div class="card-icon cyan">
+            <!-- Research icon SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+          <h3>Research-Driven</h3>
+          <p>Grounded in deep learning, generative AI, and applied ML — we iterate at the speed of research.</p>
+          <div class="tag-row"><span class="tag cyan">Deep Learning</span><span class="tag cyan">Generative AI</span></div>
+        </div>
+        <div class="card card-top-purple">
+          <div class="card-icon purple">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <h3>Production-Grade</h3>
+          <p>Enterprise-engineered AI systems — scalable, secure, and battle-tested in production.</p>
+          <div class="tag-row"><span class="tag purple">Enterprise</span><span class="tag purple">Scalable</span></div>
+        </div>
+        <div class="card card-top-emerald">
+          <div class="card-icon emerald">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <h3>Domain Expertise</h3>
+          <p>Purpose-built AI for health technology, banking, and financial services — high-stakes, regulated domains.</p>
+          <div class="tag-row"><span class="tag emerald">Healthcare</span><span class="tag emerald">Finance</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI CAPABILITIES (White bg, colorful cards) ===== -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label-tag">Core Capabilities</span>
+        <h2 class="mt-16">End-to-End <span class="text-gradient">AI Engineering</span></h2>
+        <p>From model architecture to deployment pipelines, we cover every layer of the AI stack to deliver production-ready intelligence systems.</p>
+      </div>
+      <div class="grid-4 reveal">
+        <div class="card card-top-cyan">
+          <div class="card-icon cyan">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-5.66-14.66l4.24 4.24m2.82 2.82l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m2.82-2.82l4.24-4.24"/></svg>
+          </div>
+          <h3>Model Training</h3>
+          <p>Custom model training from foundation model pretraining to supervised fine-tuning with LoRA, QLoRA, and RLHF.</p>
+        </div>
+        <div class="card card-top-purple">
+          <div class="card-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3>Fine-Tuning</h3>
+          <p>Domain-specific fine-tuning of foundation models for healthcare, banking, and financial applications.</p>
+        </div>
+        <div class="card card-top-emerald">
+          <div class="card-icon emerald">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>AI Deployment</h3>
+          <p>Production pipelines with containerised inference, model versioning, monitoring, and automated retraining.</p>
+        </div>
+        <div class="card card-top-magenta">
+          <div class="card-icon magenta">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Data Pipelines</h3>
+          <p>End-to-end data engineering — from curation to feature stores, RAG pipelines, and knowledge graphs.</p>
+        </div>
+      </div>
+
+      <!-- Pipeline Infographic -->
+      <div class="reveal mt-60" style="background:linear-gradient(135deg, rgba(6,182,212,0.04), rgba(124,58,237,0.04)); border-radius:20px; padding:40px 20px; border:1px solid var(--border);">
+        <h3 class="text-center mb-32" style="font-size:1.1rem; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.05em;">AI Delivery Pipeline</h3>
+        <div class="pipeline">
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon" style="background:linear-gradient(135deg,rgba(6,182,212,0.1),rgba(6,182,212,0.05));border-color:var(--cyan);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h4>Data Curation</h4>
+            <p>Collection &amp; cleaning</p>
+          </div>
+          <div class="pipeline-arrow"></div>
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon" style="background:linear-gradient(135deg,rgba(124,58,237,0.1),rgba(124,58,237,0.05));border-color:var(--purple);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/></svg>
+            </div>
+            <h4>Model Training</h4>
+            <p>Fine-tuning &amp; RLHF</p>
+          </div>
+          <div class="pipeline-arrow"></div>
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon" style="background:linear-gradient(135deg,rgba(236,72,153,0.1),rgba(236,72,153,0.05));border-color:var(--magenta);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h4>Evaluation</h4>
+            <p>Benchmarks &amp; testing</p>
+          </div>
+          <div class="pipeline-arrow"></div>
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon" style="background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(16,185,129,0.05));border-color:var(--emerald);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h4>Deployment</h4>
+            <p>Containerised inference</p>
+          </div>
+          <div class="pipeline-arrow"></div>
+          <div class="pipeline-step">
+            <div class="pipeline-step-icon" style="background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(245,158,11,0.05));border-color:var(--amber);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+            </div>
+            <h4>Monitoring</h4>
+            <p>Drift &amp; retraining</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HEALTHCARE (Emerald tinted section with SVG illustration) ===== -->
+  <section class="section section-emerald-tint">
+    <div class="container">
+      <div class="feature-row reveal">
+        <div>
+          <span class="label-tag" style="background:rgba(16,185,129,0.1);color:#10b981;border-color:rgba(16,185,129,0.2);">Healthcare &amp; Health Technology</span>
+          <h2 class="mt-16">AI-Powered <span class="text-gradient-emerald">Health Technology</span> &amp; Clinical Innovation</h2>
+          <p class="mt-16" style="color:var(--text-secondary);">We build advanced AI systems that transform healthcare delivery — from diagnostic imaging and patient analytics to clinical decision support and operational efficiency.</p>
+          <div class="tag-row mt-24">
+            <span class="tag emerald">Clinical AI</span>
+            <span class="tag emerald">Medical Imaging</span>
+            <span class="tag emerald">Patient Analytics</span>
+            <span class="tag emerald">Health Data</span>
+            <span class="tag emerald">Digital Health</span>
+          </div>
+          <a href="healthcare.html" class="btn btn-outline mt-32">Explore Healthcare AI &rarr;</a>
+        </div>
+        <div class="feature-visual" style="border-color:rgba(16,185,129,0.15);">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" alt="AI-powered health technology" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINANCE (Amber tinted, reversed layout) ===== -->
+  <section class="section section-amber-tint">
+    <div class="container">
+      <div class="feature-row reverse reveal">
+        <div>
+          <span class="label-tag" style="background:rgba(245,158,11,0.1);color:#f59e0b;border-color:rgba(245,158,11,0.2);">Finance &amp; Banking</span>
+          <h2 class="mt-16">Intelligent <span class="text-gradient-amber">Financial Systems</span></h2>
+          <p class="mt-16" style="color:var(--text-secondary);">From trading reconciliation to fraud detection, we deploy AI that transforms how financial institutions operate — with speed, accuracy, and regulatory transparency.</p>
+          <div class="tag-row mt-24">
+            <span class="tag amber">Fraud Detection</span>
+            <span class="tag amber">Risk Modelling</span>
+            <span class="tag amber">Trading Reconciliation</span>
+            <span class="tag amber">Financial Analytics</span>
+          </div>
+          <a href="finance.html" class="btn btn-outline mt-32">Explore Financial AI &rarr;</a>
+        </div>
+        <div class="feature-visual" style="border-color:rgba(245,158,11,0.15);">
+          <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Financial data analytics and AI trading systems" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INFRASTRUCTURE (Dark gradient section) ===== -->
+  <section class="section section-gradient-dark" style="overflow:hidden;">
+    <div style="position:absolute;top:-20%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(6,182,212,0.12),transparent 70%);pointer-events:none;"></div>
+    <div style="position:absolute;bottom:-20%;left:-10%;width:350px;height:350px;background:radial-gradient(circle,rgba(124,58,237,0.1),transparent 70%);pointer-events:none;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div class="section-header reveal">
+        <span class="label-tag" style="background:rgba(6,182,212,0.1);color:#22d3ee;border-color:rgba(6,182,212,0.2);">Infrastructure</span>
+        <h2 class="mt-16">AI Infrastructure <span class="text-gradient">On Demand</span></h2>
+        <p style="color:rgba(255,255,255,0.65);">Scalable, on-demand AI infrastructure — GPU compute environments, model training clusters, and deployment platforms tailored to your workload.</p>
+      </div>
+      <div class="grid-3 reveal">
+        <div class="card" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);">
+          <div class="card-icon blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg>
+          </div>
+          <h3 style="color:#fff;">GPU Compute</h3>
+          <p style="color:rgba(255,255,255,0.6);">High-performance GPU clusters for model training and inference — from single A100s to multi-node distributed training environments.</p>
+        </div>
+        <div class="card" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);">
+          <div class="card-icon cyan">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3 style="color:#fff;">Scalable Training</h3>
+          <p style="color:rgba(255,255,255,0.6);">Elastic training infrastructure that scales from prototype to full-scale — with distributed computing and checkpoint management.</p>
+        </div>
+        <div class="card" style="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08);">
+          <div class="card-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 style="color:#fff;">Deployment Platforms</h3>
+          <p style="color:rgba(255,255,255,0.6);">Kubernetes-orchestrated inference with auto-scaling, load balancing, and enterprise-grade reliability.</p>
+        </div>
+      </div>
+      <div class="text-center mt-32 reveal">
+        <a href="infrastructure.html" class="btn btn-outline-white">Learn About Infrastructure &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESEARCH (Purple tinted with process infographic) ===== -->
+  <section class="section-compact section-purple-tint">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label-tag" style="background:rgba(124,58,237,0.08);color:var(--purple);border-color:rgba(124,58,237,0.15);">Research &amp; Innovation</span>
+        <h2 class="mt-16">Pushing the Boundaries of <span class="text-gradient-magenta">Applied AI</span></h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <!-- Research Focus Areas as Process Flow -->
+      <div class="reveal" style="background:var(--bg-white);border-radius:var(--radius-lg);padding:32px;border:1px solid var(--border);margin-bottom:32px;">
+        <div class="process-flow">
+          <div class="process-flow-step">
+            <div class="process-flow-num" style="background:var(--gradient-primary);">1</div>
+            <h4>Foundation Models</h4>
+            <p>Novel architectures &amp; pretraining</p>
+          </div>
+          <div class="process-flow-connector"></div>
+          <div class="process-flow-step">
+            <div class="process-flow-num" style="background:var(--gradient-emerald-cyan);">2</div>
+            <h4>Domain Adaptation</h4>
+            <p>Healthcare &amp; finance fine-tuning</p>
+          </div>
+          <div class="process-flow-connector"></div>
+          <div class="process-flow-step">
+            <div class="process-flow-num" style="background:var(--gradient-amber-magenta);">3</div>
+            <h4>Compliance AI</h4>
+            <p>Regulatory &amp; risk automation</p>
+          </div>
+          <div class="process-flow-connector"></div>
+          <div class="process-flow-step">
+            <div class="process-flow-num" style="background:var(--gradient-magenta-purple);">4</div>
+            <h4>Production Research</h4>
+            <p>Real-world validation &amp; deployment</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2 reveal">
+        <div class="card card-top-purple">
+          <div class="card-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3>Foundation Model Research</h3>
+          <p>Novel pretraining strategies and efficient training techniques for domain-specific models.</p>
+          <div class="tag-row">
+            <span class="tag purple">Transformers</span>
+            <span class="tag purple">MoE</span>
+            <span class="tag purple">Efficient Attention</span>
+          </div>
+        </div>
+        <div class="card card-top-emerald">
+          <div class="card-icon emerald">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Regulated Industry AI</h3>
+          <p>Compliance automation, risk modelling, and intelligent document processing for healthcare and finance.</p>
+          <div class="tag-row">
+            <span class="tag emerald">Compliance AI</span>
+            <span class="tag emerald">Risk Modelling</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-32 reveal">
+        <a href="research.html" class="btn btn-secondary">Explore Our Research &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION (Light section) ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="feature-row reveal">
+        <div>
+          <span class="label-tag" style="background:rgba(236,72,153,0.08);color:#ec4899;border-color:rgba(236,72,153,0.15);">Education &amp; Training</span>
+          <h2 class="mt-16">Building <span class="text-gradient-magenta">AI Capability</span> Across Organisations</h2>
+          <p class="mt-16" style="color:var(--text-secondary);">Comprehensive AI education and training designed for enterprises, healthcare professionals, and technical teams.</p>
+          <div class="grid-2 mt-32" style="gap:16px;">
+            <div style="padding:20px;border-radius:12px;background:rgba(236,72,153,0.04);border:1px solid rgba(236,72,153,0.12);">
+              <h4 style="font-size:0.95rem;">Enterprise Workshops</h4>
+              <p style="font-size:0.85rem;margin-top:8px;color:var(--text-secondary);">Hands-on AI training for teams</p>
+            </div>
+            <div style="padding:20px;border-radius:12px;background:rgba(124,58,237,0.04);border:1px solid rgba(124,58,237,0.12);">
+              <h4 style="font-size:0.95rem;">Healthcare AI Training</h4>
+              <p style="font-size:0.85rem;margin-top:8px;color:var(--text-secondary);">For clinical and research staff</p>
+            </div>
+            <div style="padding:20px;border-radius:12px;background:rgba(6,182,212,0.04);border:1px solid rgba(6,182,212,0.12);">
+              <h4 style="font-size:0.95rem;">AI Literacy Programmes</h4>
+              <p style="font-size:0.85rem;margin-top:8px;color:var(--text-secondary);">Foundational AI understanding</p>
+            </div>
+            <div style="padding:20px;border-radius:12px;background:rgba(16,185,129,0.04);border:1px solid rgba(16,185,129,0.12);">
+              <h4 style="font-size:0.95rem;">Custom Corporate Training</h4>
+              <p style="font-size:0.85rem;margin-top:8px;color:var(--text-secondary);">Tailored to your AI strategy</p>
+            </div>
+          </div>
+          <a href="education.html" class="btn btn-outline mt-32">Training Programmes &rarr;</a>
+        </div>
+        <div class="feature-visual" style="border-color:rgba(236,72,153,0.12);">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="AI education and corporate training workshop" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENT IMPACT (Infographic-rich) ===== -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label-tag">Client Impact</span>
+        <h2 class="mt-16">Trusted by <span class="text-gradient">Forward-Thinking Organisations</span></h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <!-- Icon Stats Row -->
+      <div class="icon-stat-row reveal mt-32">
+        <div class="icon-stat">
+          <div class="stat-icon" style="background:rgba(6,182,212,0.1);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+          </div>
+          <div class="stat-number">5+</div>
+          <div class="stat-text">Industry Verticals</div>
+        </div>
+        <div class="icon-stat">
+          <div class="stat-icon" style="background:rgba(124,58,237,0.1);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="stat-number">E2E</div>
+          <div class="stat-text">Full-Stack Delivery</div>
+        </div>
+        <div class="icon-stat">
+          <div class="stat-icon" style="background:rgba(16,185,129,0.1);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="stat-number">24/7</div>
+          <div class="stat-text">Infrastructure Monitoring</div>
+        </div>
+        <div class="icon-stat">
+          <div class="stat-icon" style="background:rgba(236,72,153,0.1);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="stat-number">UK</div>
+          <div class="stat-text">Cambridge-Based</div>
+        </div>
+      </div>
+
+      <!-- Capability Metric Bars -->
+      <div class="reveal mt-48" style="background:var(--bg-light);border-radius:var(--radius-lg);padding:32px;border:1px solid var(--border);">
+        <h3 style="font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-tertiary);margin-bottom:24px;text-align:center;">AI Capability Coverage</h3>
+        <div class="metric-bar">
+          <span class="metric-bar-label">Healthcare AI</span>
+          <div class="metric-bar-track"><div class="metric-bar-fill" style="width:95%;background:var(--gradient-emerald-cyan);"></div></div>
+          <span class="metric-bar-value">95%</span>
+        </div>
+        <div class="metric-bar">
+          <span class="metric-bar-label">Banking &amp; Finance</span>
+          <div class="metric-bar-track"><div class="metric-bar-fill" style="width:92%;background:var(--gradient-amber-magenta);"></div></div>
+          <span class="metric-bar-value">92%</span>
+        </div>
+        <div class="metric-bar">
+          <span class="metric-bar-label">Model Training</span>
+          <div class="metric-bar-track"><div class="metric-bar-fill" style="width:98%;background:var(--gradient-primary);"></div></div>
+          <span class="metric-bar-value">98%</span>
+        </div>
+        <div class="metric-bar">
+          <span class="metric-bar-label">Infrastructure</span>
+          <div class="metric-bar-track"><div class="metric-bar-fill" style="width:90%;background:var(--gradient-blue-indigo);"></div></div>
+          <span class="metric-bar-value">90%</span>
+        </div>
+      </div>
+
+      <!-- Sector Cards -->
+      <div class="grid-3 mt-32 reveal">
+        <div class="card card-top-emerald">
+          <div class="card-icon emerald">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Healthcare</h3>
+          <p>Clinical decision support, diagnostics, and patient outcome prediction.</p>
+        </div>
+        <div class="card card-top-amber">
+          <div class="card-icon amber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h3>Banking</h3>
+          <p>Fraud detection, risk modelling, and regulatory compliance automation.</p>
+        </div>
+        <div class="card card-top-purple">
+          <div class="card-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Financial Services</h3>
+          <p>Trading analytics, portfolio optimisation, and operational intelligence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA (Dark gradient) ===== -->
+  <section class="cta-section">
+    <div class="container" style="position:relative;z-index:1;">
+      <h2 class="reveal">Ready to Accelerate with <span class="text-gradient">AI</span>?</h2>
+      <p class="reveal">Let's discuss how IntelliQuest can help your organisation harness the power of Artificial Intelligence — from research to production.</p>
+      <div class="cta-buttons reveal">
+        <a href="contact.html" class="btn btn-white btn-lg">Get in Touch</a>
+        <a href="services.html" class="btn btn-outline-white btn-lg">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+            <span class="nav-logo-text">Intelli<span>Quest</span></span>
+          </a>
+          <p>Applying Artificial Intelligence to accelerate innovation in Health Technology, Banking, and Financial Services.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">AI Engineering</a>
+          <a href="healthcare.html">Healthcare AI</a>
+          <a href="finance.html">Financial AI</a>
+          <a href="infrastructure.html">AI Infrastructure</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="research.html">Research</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+          <a href="#">Cambridge, UK</a>
+          <a href="#">Mon – Fri, 9:00 – 18:00 GMT</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 IntelliQuest. All rights reserved.</span>
+        <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

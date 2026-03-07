@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Infrastructure | Intelliquest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+        <span class="nav-logo-text">Intelli<span>Quest</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">AI Services</a>
+        <a href="healthcare.html">Healthcare</a>
+        <a href="finance.html">Finance</a>
+        <a href="research.html">Research</a>
+        <a href="infrastructure.html" class="active">Infrastructure</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Contact Us</a>
+      </div>
+      <button class="nav-mobile-toggle" onclick="openMobileMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="closeMobileMenu()">&times;</button>
+    <a href="index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="about.html" onclick="closeMobileMenu()">About</a>
+    <a href="services.html" onclick="closeMobileMenu()">AI Services</a>
+    <a href="healthcare.html" onclick="closeMobileMenu()">Healthcare</a>
+    <a href="finance.html" onclick="closeMobileMenu()">Finance</a>
+    <a href="research.html" onclick="closeMobileMenu()">Research</a>
+    <a href="infrastructure.html" class="active" onclick="closeMobileMenu()">Infrastructure</a>
+    <a href="education.html" onclick="closeMobileMenu()">Education</a>
+    <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="reveal">
+                <span class="label-tag">Enterprise Infrastructure</span>
+                <h1>On-Demand AI <span class="text-gradient">Infrastructure</span> for Enterprise Scale</h1>
+                <p>Harness the power of distributed computing with our cutting-edge GPU clusters, scalable training platforms, and secure deployment infrastructure designed for mission-critical AI workloads.</p>
+                <a href="contact.html" class="btn btn-primary">Request Infrastructure Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GPU Compute Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">High-Performance GPU Compute</h2>
+                <p>Industry-leading GPU clusters engineered for maximum throughput and efficiency</p>
+            </div>
+            <div class="feature-visual" style="margin-bottom: 3rem; height: 300px; position: relative;">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="GPU hardware and computing infrastructure" loading="lazy">
+            </div>
+            <div class="grid-3">
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 16h8v16H8zM24 16h8v16h-8zM40 16h-4v16h4z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>NVIDIA A100 GPUs</h3>
+                    <p>40GB HBM2 memory for massive parallel training and inference workloads.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12v24M12 24h24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>NVIDIA H100 Tensors</h3>
+                    <p>Next-generation performance for advanced model training.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="8" width="36" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 14h24M12 22h24M12 30h24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Multi-Node Distributed Training</h3>
+                    <p>Scale across thousands of GPUs with optimized orchestration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scalable Training Infrastructure -->
+    <section class="section section-soft">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">Scalable Training Infrastructure</h2>
+                <p>Elastic compute resources that grow with your model complexity</p>
+            </div>
+            <div class="feature-visual" style="margin-bottom: 3rem; height: 300px; position: relative;">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="Cloud computing infrastructure" loading="lazy">
+            </div>
+            <div class="grid-4">
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 20v-4a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v4M8 28h32v8a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4v-8z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Elastic Scaling</h3>
+                    <p>Dynamically provision resources based on real-time demand.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 16l16-8 16 8v16l-16 8-16-8z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M24 8v16M8 24l16 8 16-8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Mixed Precision Training</h3>
+                    <p>FP16 and TF32 for faster training with minimal accuracy loss.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 10v28M10 24h28" stroke="currentColor" stroke-width="2" stroke-dasharray="2,2"/>
+                        </svg>
+                    </div>
+                    <h3>Checkpoint Management</h3>
+                    <p>Automatic checkpointing and recovery mechanisms for fault tolerance.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 12a2 2 0 0 1 2-2h32a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V12z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 18h24M12 26h24M12 34h12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Distributed Computing</h3>
+                    <p>TensorFlow, PyTorch, JAX with native distributed APIs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Deployment Platforms -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">AI Deployment Platforms</h2>
+                <p>Production-ready infrastructure for serving models at any scale</p>
+            </div>
+            <div class="feature-visual" style="margin-bottom: 3rem; height: 300px; position: relative;">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="Data center server room" loading="lazy">
+            </div>
+            <div class="grid-3">
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="10" width="32" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <rect x="12" y="14" width="24" height="16" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M12 32h24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Containerized Inference</h3>
+                    <p>Docker and container orchestration for reproducible deployments.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 14h36v20H6z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="24" r="2" fill="currentColor"/>
+                            <circle cx="24" cy="24" r="2" fill="currentColor"/>
+                            <circle cx="36" cy="24" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Kubernetes Orchestration</h3>
+                    <p>Enterprise-grade orchestration with automated scaling and management.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 18a10 10 0 0 1 10-10h12a10 10 0 0 1 10 10v12a10 10 0 0 1-10 10H18a10 10 0 0 1-10-10V18z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 20v8M20 24h8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Auto-Scaling & Load Balancing</h3>
+                    <p>Intelligent routing and automatic scaling based on performance metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Infrastructure -->
+    <section class="section section-soft">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">Data Infrastructure</h2>
+                <p>Complete data management stack for enterprise AI workloads</p>
+            </div>
+            <div class="grid-3">
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12h32v12H8zM8 28h32v8H8z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M12 16h8M12 32h8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Data Lakes</h3>
+                    <p>Centralized repository for all data with ACID compliance.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="36" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 16v4M24 28v2M36 16v2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Feature Stores</h3>
+                    <p>Real-time feature engineering with low-latency access.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8v32M24 8v32M36 8v32" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 20h32M8 32h32" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Vector Databases</h3>
+                    <p>Optimized storage and search for high-dimensional embeddings.</p>
+                </div>
+            </div>
+            <div class="grid-2" style="margin-top: 2rem;">
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 24h36M18 12l6 12-6 12M30 12l6 12-6 12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Streaming Pipelines</h3>
+                    <p>Real-time data ingestion with Kafka and Flink integration.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 14h32a2 2 0 0 1 2 2v20a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 20v8M20 24h8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Data Governance</h3>
+                    <p>Lineage tracking, metadata management, and compliance monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Compliance -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">Security & Compliance</h2>
+                <p>Enterprise-grade protection for your AI infrastructure and data</p>
+            </div>
+            <div class="grid-4">
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 18c0-6 6-8 14-8s14 2 14 8v14c0 4-4 8-14 8s-14-4-14-8V18z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 26l3 3 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Network isolation, firewall rules, and VPC configurations.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 10h24v28H12z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 20h16M16 28h16" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Encryption</h3>
+                    <p>End-to-end encryption with FIPS 140-2 compliance.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon blue">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 20h36v20H6z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 20V14a12 12 0 0 1 24 0v6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="30" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Access Control</h3>
+                    <p>RBAC and multi-factor authentication for all resources.</p>
+                </div>
+                <div class="card section-cyan-tint">
+                    <div class="card-icon cyan">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 12h32v24H8z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 18h8M12 24h16M12 30h12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Audit Trails</h3>
+                    <p>Comprehensive logging and monitoring of all infrastructure activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Provisioning -->
+    <section class="section section-soft section-compact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">Infrastructure Provisioning</h2>
+                <div class="accent-line"></div>
+                <p>Complete AI lifecycle from data to deployment</p>
+            </div>
+            <div class="process-flow reveal">
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">1</div>
+                    <h4>Ingest</h4>
+                    <p>Multi-source data collection</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">2</div>
+                    <h4>Process</h4>
+                    <p>ETL and feature engineering</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">3</div>
+                    <h4>Train</h4>
+                    <p>Distributed GPU training</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">4</div>
+                    <h4>Deploy</h4>
+                    <p>Production serving at scale</p>
+                </div>
+                <div class="process-flow-connector"></div>
+                <div class="process-flow-step">
+                    <div class="process-flow-num" style="background:var(--gradient-primary);">5</div>
+                    <h4>Monitor</h4>
+                    <p>Performance and drift tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Metrics -->
+    <section class="section section-compact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">Infrastructure Capabilities</h2>
+                <div class="accent-line"></div>
+                <p>Enterprise-scale performance and reliability</p>
+            </div>
+            <div class="icon-stat-row">
+                <div class="icon-stat">
+                    <div class="stat-icon" style="background:rgba(6,182,212,0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                    </div>
+                    <div class="stat-number">99.99%</div>
+                    <div class="stat-text">Uptime SLA</div>
+                </div>
+                <div class="icon-stat">
+                    <div class="stat-icon" style="background:rgba(6,182,212,0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"></rect><path d="M7 8h10M7 13h10M7 18h6"></path></svg>
+                    </div>
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-text">GPU Hours/Month</div>
+                </div>
+                <div class="icon-stat">
+                    <div class="stat-icon" style="background:rgba(6,182,212,0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path><path d="M12 6v6l4 2.5"></path></svg>
+                    </div>
+                    <div class="stat-number">&lt;50ms</div>
+                    <div class="stat-text">P99 Latency</div>
+                </div>
+                <div class="icon-stat">
+                    <div class="stat-icon" style="background:rgba(6,182,212,0.1);">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"><path d="M6 9l6 6 6-6"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                    </div>
+                    <div class="stat-number">50GB+</div>
+                    <div class="stat-text">Throughput/sec</div>
+                </div>
+            </div>
+
+            <!-- Metric Bars -->
+            <div style="margin-top: 3rem;">
+                <h3 style="margin-bottom: 2rem; text-align: center;">Capability Coverage</h3>
+                <div style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div class="metric-bar">
+                        <span class="metric-bar-label">GPU Cluster Availability</span>
+                        <div class="metric-bar-track"><div class="metric-bar-fill" style="width:98%;background:var(--gradient-primary);"></div></div>
+                        <span class="metric-bar-value">98%</span>
+                    </div>
+                    <div class="metric-bar">
+                        <span class="metric-bar-label">Network Reliability</span>
+                        <div class="metric-bar-track"><div class="metric-bar-fill" style="width:99.99%;background:var(--gradient-primary);"></div></div>
+                        <span class="metric-bar-value">99.99%</span>
+                    </div>
+                    <div class="metric-bar">
+                        <span class="metric-bar-label">Storage Durability</span>
+                        <div class="metric-bar-track"><div class="metric-bar-fill" style="width:99.999%;background:var(--gradient-primary);"></div></div>
+                        <span class="metric-bar-value">99.999%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="text-gradient">Ready to Scale Your AI Operations?</h2>
+            <p>Build, train, and deploy AI models on our enterprise-grade infrastructure.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-white">Request Demo</a>
+                <a href="services.html" class="btn btn-outline-white-white">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="Logo_intelliquest..png" alt="IntelliQuest Logo">
+            <span class="nav-logo-text">Intelli<span>Quest</span></span>
+          </a>
+          <p>Applying Artificial Intelligence to accelerate innovation in Healthcare, Financial Services, and Enterprise Systems.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">AI Engineering</a>
+          <a href="healthcare.html">Healthcare AI</a>
+          <a href="finance.html">Financial AI</a>
+          <a href="infrastructure.html">AI Infrastructure</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="research.html">Research</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+          <a href="#">Cambridge, UK</a>
+          <a href="#">Mon - Fri, 9:00 - 18:00 GMT</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 IntelliQuest. All rights reserved.</span>
+        <a href="mailto:intelliquest.tech@gmail.com">intelliquest.tech@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
